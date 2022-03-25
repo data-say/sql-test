@@ -1,0 +1,13 @@
+-- https://www.hackerrank.com/challenges/occupations/problem?isFullScreen=true
+
+SELECT MIN((CASE WHEN OCCUPATION = 'Doctor' THEN NAME END)) AS Doctor
+, MIN((CASE WHEN OCCUPATION = 'Professor' THEN NAME END)) AS Professor
+, MIN((CASE WHEN OCCUPATION = 'Singer' THEN NAME END)) AS Singer
+, MIN((CASE WHEN OCCUPATION = 'Actor' THEN NAME END)) AS Actor
+FROM (
+    SELECT OCCUPATION, NAME
+    , ROW_NUMBER() OVER (PARTITION BY OCCUPATION ORDER BY NAME) AS RN
+    FROM OCCUPATIONS
+    ORDER BY 1, 3
+ ) A
+GROUP BY RN
