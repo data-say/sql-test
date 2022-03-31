@@ -7,5 +7,5 @@
 2. [Advanced Select](https://github.com/data-say/sql-test/tree/main/AdvancedSelect)
 3. [Aggregation](https://github.com/data-say/sql-test/tree/main/Aggregation)
 4. [Basic Join](https://github.com/data-say/sql-test/tree/main/BasicJoin)
-5. Advanced Join
+5. [Advanced Join](https://github.com/data-say/sql-test/tree/main/AdvancedJoin)
 6. [Alternative Queries](https://github.com/data-say/sql-test/tree/main/AlternativeQueries)
